@@ -5,6 +5,10 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Company from "./components/Company";
+import WhyMe from "./components/WhyMe";
+import Skills from "./components/Skills";
+import References from "./components/References";
 
 
 
@@ -26,11 +30,18 @@ export default function Home({ title = "Dans Personal Cover Letter" }) {
        
             <Projects />
           </div>
-          <div id="whyyou" className="card" />
-          <div id="whyme" className="card" />
-          <div id="skills" className="card" />
-          <div id="references" className="card" />
-          <div id="resume" className="card" />
+          <div id="whyyou" className="card">
+          <Company />
+          </div> 
+          <div id="whyme" className="card"> 
+          <WhyMe />
+          </div>
+          <div id="skills" className="card">
+          <Skills />  
+          </div>
+          <div id="references" className="card">
+          <References />
+          </div>
         </div>
       </main>
       <Footer />

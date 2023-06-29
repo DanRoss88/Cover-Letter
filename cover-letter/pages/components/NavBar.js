@@ -27,7 +27,7 @@ export default function NavBar() {
           <Link href="#references" scroll={false}>References</Link>
         </li>
         <li>
-          <Link href="#resume" scroll={false}>Resume</Link>
+          <Link href="https://flowcv.com/resume/9th3fq6rpv" scroll={false}>Resume</Link>
         </li>
       </ul>
     </nav>

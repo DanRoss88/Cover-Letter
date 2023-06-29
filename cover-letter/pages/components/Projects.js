@@ -1,15 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import Slides from "./Slides";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+  const [emblaRef, embla] = useEmblaCarousel({
+    align: "start",
+    loop: true,
+    skipSnaps: false,
+    inViewThreshold: 0.7,
+  });
+
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [scrollSnaps, setScrollSnaps] = useState([]);
+
+  const scrollTo = useCallback(
+    (index) => embla && embla.scrollTo(index),
+    [embla]
+  );
+
+  const onSelect = useCallback(() => {
+    if (!embla) return;
+    setSelectedIndex(embla.selectedScrollSnap());
+  }, [embla, setSelectedIndex]);
 
   useEffect(() => {
-    if (emblaApi) {
-      console.log(emblaApi.slideNodes()); // Access API
-    }
-  }, [emblaApi]);
+    if (!embla) return;
+    onSelect();
+    setScrollSnaps(embla.scrollSnapList());
+    embla.on("select", onSelect);
+  }, [embla, setScrollSnaps, onSelect]);
 
   const items = {
     responsive: [
@@ -58,12 +78,44 @@ export default function Projects() {
   };
 
   return (
-    <div className="embla" ref={emblaRef}>
-      <div className="embla__container">
-        {items.responsive.map((item) => (
-          <div className="embla__slide" key={item.id}>
-            <Slides item={item} />
-          </div>
+    <div>
+      <div className="embla" ref={emblaRef}>
+        <div className="embla__container">
+          {items.responsive.map((item) => (
+            <div className="embla__slide" key={item.id}>
+              <div className="overflow-hidden cursor-pointer lg:w-1/2">
+                <Link href={item.url1}>
+                  <>
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      height={514}
+                      width={800}
+                      className="rounded-lg shadow-xl"
+                      placeholder="blur"
+                      blurDataURL={item.image}
+                    />
+                  </>
+                </Link>
+                <Link href={item.url2 || "#"} />
+                <div className="flex flex-col space-y-4 lg:w-4/5 lg:space-x-20 lg:justify-center">
+                  <h1>{item.title}</h1>
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex items-center justify-center mt-5 space-x-2">
+        {items.responsive.map((_, idx) => (
+          <button
+            className={`w-2 h-2 rounded-full ${
+              idx === selectedIndex ? "bg-yellow-500" : "bg-gray-300"
+            }`}
+            key={idx}
+            onClick={() => scrollTo(idx)}
+          />
         ))}
       </div>
     </div>
