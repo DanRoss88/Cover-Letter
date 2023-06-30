@@ -9,42 +9,48 @@ import Company from "./components/Company";
 import WhyMe from "./components/WhyMe";
 import Skills from "./components/Skills";
 import References from "./components/References";
+import Socials from "./components/Socials";
 
 
 
 export default function Home({ title = "Dans Personal Cover Letter" }) {
   return (
-    <div className="container">
+    <div className="body-container">
       <Head>
         <title>{title}</title>
       </Head>
       <NavBar />
-      <main>
+      <main className="main-container">
+        <div className="main-grid">
         <Header />
-        <div className="grid">
-          <div id="about" className="card">
+          <div id="about" className="main-card">
           
             <About />
           </div>
-          <div id="projects" className="card">
+          <div id="projects" className="main-card">
        
             <Projects />
           </div>
-          <div id="whyyou" className="card">
+          <div id="whyyou" className="main-card">
           <Company />
           </div> 
-          <div id="whyme" className="card"> 
+          <div id="whyme" className="main-card"> 
           <WhyMe />
           </div>
-          <div id="skills" className="card">
+          <div id="skills" className="main-card">
           <Skills />  
           </div>
-          <div id="references" className="card">
+          <div id="references" className="main-card">
           <References />
           </div>
         </div>
       </main>
+      
       <Footer />
+      
+      
+        <Socials />
+     
     </div>
   );
 }

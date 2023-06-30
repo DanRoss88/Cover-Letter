@@ -3,7 +3,7 @@
 export default function Company() {
 
   return (
-<div className="company">
+<div className="company-container">
   <h1>What I love about the Company</h1>
   <span>Here are some facts that I really like about the company</span>
   <div className="company-grid">

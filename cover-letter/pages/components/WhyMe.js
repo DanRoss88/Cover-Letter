@@ -2,7 +2,7 @@
 export default function WhyMe() {
 
   return (
-<div className="whyme">
+<div className="whyme-container">
   <h1>Why Me?</h1>
   <span>Here are some reasons why I would be a great fit for the role</span>
   <div className="whyme-grid">
