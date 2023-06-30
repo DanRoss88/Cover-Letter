@@ -5,7 +5,7 @@ export default function About() {
         <h1>About Me</h1>
       </div>
       <div className="about-content">
-        <div>
+        <div className="about-card">
           <h3>2006</h3>
           <h2>Started kitchen work</h2>
           <p>
@@ -13,7 +13,7 @@ export default function About() {
             restaurant in my hometown of Surrey, British Columbia.
           </p>
         </div>
-        <div>
+        <div className="about-card">
           <h3>2020</h3>
           <h2>Child Care</h2>
           <p>
@@ -22,7 +22,7 @@ export default function About() {
             youth in my hometown. In my spare time I started learning to code.
           </p>
         </div>
-        <div>
+        <div className="about-card">
           <h3>2023</h3>
           <h2>Graduated from Lighthouse Labs</h2>
           <p>
@@ -34,7 +34,7 @@ export default function About() {
             am grateful for the opportunity to pursue my passion.
           </p>
         </div>
-        <div>
+        <div className="about-wrapup">
           <p>
             When I'm not working on coding projects, I love to spend my free
             time doing things that make me happy. I enjoy taking my dog Bobbi

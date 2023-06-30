@@ -23,24 +23,24 @@ export default function Home({ title = "Dans Personal Cover Letter" }) {
       <main className="main-container">
         <div className="main-grid">
         <Header />
-          <div id="about" className="main-card">
+          <div id="about" className="main-card1">
           
             <About />
           </div>
-          <div id="projects" className="main-card">
+          <div id="projects" className="main-card2">
        
             <Projects />
           </div>
-          <div id="whyyou" className="main-card">
+          <div id="whyyou" className="main-card3">
           <Company />
           </div> 
-          <div id="whyme" className="main-card"> 
+          <div id="whyme" className="main-card4"> 
           <WhyMe />
           </div>
-          <div id="skills" className="main-card">
+          <div id="skills" className="main-card5">
           <Skills />  
           </div>
-          <div id="references" className="main-card">
+          <div id="references" className="main-card6">
           <References />
           </div>
         </div>

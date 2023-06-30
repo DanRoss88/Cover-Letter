@@ -8,17 +8,17 @@ return (
 <div className="socials">
   <div className="socials-links">
   <Link href="https://www.linkedin.com/in/dan-ross-webdev/">
-  <AiOutlineLinkedin/>
+  <AiOutlineLinkedin size={32}/>
 </Link>
 </div>
 <div className="socials-links">
 <Link href="https://www.github.com/danross88">
-<AiOutlineGithub />
+<AiOutlineGithub size={32} />
 </Link>
 </div>
 <div className="socials-links">
   <Link href="mailto:danielmartinross@gmail.com">
-  <AiOutlineGoogle/>
+  <AiOutlineGoogle size={32}/>
 </Link>
 </div>
 </div>
