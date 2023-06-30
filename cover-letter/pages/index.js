@@ -31,11 +31,13 @@ export default function Home({ title = "Dans Personal Cover Letter" }) {
        
             <Projects />
           </div>
+          <div className="why-grid">
           <div id="whyyou" className="main-card3">
           <Company />
           </div> 
           <div id="whyme" className="main-card4"> 
           <WhyMe />
+          </div>
           </div>
           <div id="skills" className="main-card5">
           <Skills />  
