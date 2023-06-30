@@ -1,11 +1,19 @@
+import React, { useEffect, useState } from "react";
+
 export default function About() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
-    <main id="about" className="about-container">
+    <main id="about" className={`about-container ${isVisible && "visible"}`}>
       <div className="about-headline">
         <h1>About Me</h1>
       </div>
       <div className="about-content">
-        <div className="about-card">
+        <div className={`about-card ${isVisible && "visible"}`}>
           <h3>2006</h3>
           <h2>Started kitchen work</h2>
           <p>
@@ -13,16 +21,16 @@ export default function About() {
             restaurant in my hometown of Surrey, British Columbia.
           </p>
         </div>
-        <div className="about-card">
+        <div className={`about-card ${isVisible && "visible"}`}>
           <h3>2020</h3>
           <h2>Child Care</h2>
           <p>
             I lost my job due to the pandemic and decided to take a break from
-            managing kitchens. I took up a job as a caretaker for high risk
-            youth in my hometown. In my spare time I started learning to code.
+            managing kitchens. I took up a job as a caretaker for high-risk
+            youth in my hometown. In my spare time, I started learning to code.
           </p>
         </div>
-        <div className="about-card">
+        <div className={`about-card ${isVisible && "visible"}`}>
           <h3>2023</h3>
           <h2>Graduated from Lighthouse Labs</h2>
           <p>
@@ -34,7 +42,7 @@ export default function About() {
             am grateful for the opportunity to pursue my passion.
           </p>
         </div>
-        <div className="about-wrapup">
+        <div className={`about-wrapup ${isVisible && "visible"}`}>
           <p>
             When I'm not working on coding projects, I love to spend my free
             time doing things that make me happy. I enjoy taking my dog Bobbi
