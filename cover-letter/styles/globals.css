@@ -159,6 +159,7 @@ body {
   justify-content: flex-end;
   list-style: none;
   margin-left: 1rem;
+  margin-right: 1rem;
   padding: 0;
   align-items: right;
   width: 100%;
@@ -169,7 +170,7 @@ body {
   justify-content: flex-start;
   text-shadow: #2f5061 0px 0px 10px;
   padding-left: 4rem;
-  width: 100%;
+  width: 90%;
 }
 
 .logo-name h1 {
@@ -187,18 +188,14 @@ body {
   text-decoration: none;
   margin: 1rem;
   padding: 5px 10px;
-  border-radius: 45px;
+  /* border-radius: 45px; */
   font-size: 1.1rem;
   font-weight: var(--font-weight-secondary);
 }
 
 .navbar a:hover {
-  box-shadow: #2f5061 0px 0px 10px;
-}
-
-.navbar a.active {
-  background-color: #333;
-  color: #fff;
+  /* box-shadow: #2f5061 0px 0px 10px; */
+  color: var(--color-background);
 }
 
 /* header */
@@ -276,7 +273,6 @@ body {
   font-size: 1.3rem;
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-secondary);
-  font-style: oblique;
 }
 
 .about-card h2 {
@@ -572,9 +568,16 @@ body {
   size: 1.4rem;
 }
 
+.socials-links:hover {
+  color: var(--color-tertiary);
+}
+
 /* footer */
 
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: var(--color-secondary);
   padding: 10px;
   margin-top: 20px;
@@ -583,7 +586,7 @@ body {
 .footer p {
   font-size: 0.8rem;
   margin-right: 2rem;
-  color: var(--color-primary);
+  color: white;
 }
 
 /* hamburger */
