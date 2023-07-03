@@ -468,6 +468,66 @@ body {
   font-weight: var(--font-weight-primary);
   color: var(--color-primary);
 }
+
+.company-logo1 {
+  position: relative;
+}
+
+.company-logo1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/magnifying.jpg");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.22;
+  z-index: -1;
+}
+
+.company-logo2 {
+  position: relative;
+}
+
+.company-logo2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/data.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.22;
+  z-index: -1;
+}
+
+.company-logo3 {
+  position: relative;
+}
+
+.company-logo3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/brainheart.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.22;
+  z-index: -1;
+}
+
+
+
 /*////////////////////////////////////////// WhyMe ////////////////////////////////////// */
 
 .whyme-container {
@@ -514,6 +574,67 @@ body {
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-primary);
   color: var(--color-primary);
+}
+.whyme-card p.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.why-me1 {
+  position: relative;
+}
+
+.why-me1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/brainicon.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.22;
+  z-index: -1;
+}
+
+.why-me2 {
+  position: relative;
+}
+
+.why-me2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/handshake.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.22;
+  z-index: -1;
+}
+
+.why-me3 {
+  position: relative;
+}
+
+.why-me3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/passion1.png");
+  background-size: 35%;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.22;
+  z-index: -1;
 }
 
 /*////////////////////////////// skills //////////////////////////////*/
