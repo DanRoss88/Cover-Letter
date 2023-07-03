@@ -1,36 +1,26 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { slide as Menu } from 'react-burger-menu';
 
 export default function NavBar() {
   const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1945);
     };
+
     window.addEventListener("resize", handleResize);
     handleResize();
+
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-  const HamburgerMenu = () => (
-    <div className='relative p-2'>
-      <Menu customBurgerIcon={<HamburgerIcon />} width={'auto'} className='left-0 top-12'>
-        <Links />
-      </Menu>
-    </div>
-  );
-
-  const HamburgerIcon = () => (
-    <div className='p-1/2'>
-      <svg className="w-8 h-8 text-gray-500" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-        <path d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </div>
-  );
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const Links = () => (
     <>
@@ -78,9 +68,21 @@ export default function NavBar() {
         <h1>Daniel Ross</h1>
       </div>
       {isMobile ? (
-        <div className='max-w-full h-12 flex justify-start items-center bg-black mb-4 text-white rounded-md'>
-          <div className='flex md:hidden'>
-            <HamburgerMenu />
+        <div className="max-w-full h-12 flex justify-start items-center bg-black mb-4 text-white rounded-md">
+          <div className="relative p-2">
+            <div
+              className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
+              onClick={handleMenuToggle}
+            >
+              <span className="line"></span>
+              <span className="line"></span>
+              <span className="line"></span>
+            </div>
+            {isMenuOpen && (
+              <ul className="menu-list">
+                <Links />
+              </ul>
+            )}
           </div>
         </div>
       ) : (
