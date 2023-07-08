@@ -44,24 +44,24 @@ export default function Projects() {
         <div className="embla__container">
           {items.responsive.map((item) => (
             <div className="embla__slide" key={item.id}>
-              <div className="overflow-hidden cursor-pointer lg:w-1/2">
+              {/* <div className="overflow-hidden cursor-pointer"> */}
                 <Link href={item.url1}>
                   <>
-                    <div className="absolute z-10 flex items-center justify-center w-full h-full text-3xl font-bold text-white bg-black bg-opacity-50 opacity-0 hover:opacity-100">
+                    {/* <div className="flex items-center justify-center text-3xl font-bold text-white bg-black bg-opacity-50 opacity-0 hover:opacity-100">  */}
                       <Image
                         src={item.image}
                         alt={item.title}
-                        width={800}
-                        height={514}
+                        width={500}
+                        height={680}
                         className="responsive-image rounded-lg shadow-xl"
                         placeholder="blur"
                         blurDataURL={item.image}
                       />
-                    </div>
+                     {/* </div>  */}
                   </>
                 </Link>
 
-                <div className="flex flex-col space-y-4 lg:w-4/5 lg:space-x-20 lg:justify-center">
+                {/* <div className="flex flex-col space-y-4 lg:w-4/5 lg:space-x-20 lg:justify-center"> */}
                   <h1>{item.title}</h1>
                   <p>
                     {item.description}{" "}
@@ -71,8 +71,8 @@ export default function Projects() {
                       </Link>
                     )}
                   </p>
-                </div>
-              </div>
+                {/* </div> */}
+              {/* </div> */}
             </div>
           ))}
         </div>

@@ -21,9 +21,9 @@ const items = {
       id: 3,
       title: "Portfolio",
       description:
-        "This portfolio started out as a Next.js blog tutorial. I then customized it to my liking and added a few features of my own. I used Next.js, React, and CSS to build this portfolio.",
-      image: "/portfolio.png",
-      url1: "https://danross-portfolio.vercel.app/",
+        "I used Next.js, React, and CSS to build this portfolio to showcase my projects and skills. I also used Framer Motion to add some animations.",
+      image: "/newportfolio.png",
+      url1: "https://dr-portfolio-six.vercel.app",
     },
     {
       id: 4,

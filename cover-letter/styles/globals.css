@@ -8,7 +8,7 @@
   --color-tertiary: #2f5061;
   --color-accent: #e57f84;
   --color-secondary-accent: #e4e290;
-  --color-background: #f4eae6;
+  --color-background: #fcfbfa;
   --font-family-primary: "League Spartan", sans-serif;
   --font-family-secondary: "Titillium Web", sans-serif;
   --font-weight-primary: 400;
@@ -152,7 +152,7 @@ body {
 .why-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: .5rem;
 }
 
 .main-card3 {
@@ -302,24 +302,39 @@ body {
 }
 
 .header h1 {
-  font-size: 3.5rem;
+  font-size: 8vw;
+  position: relative;
   font-family: var(--font-family-primary);
-  font-weight: var(--font-weight-tertiary);
+  white-space: nowrap;
+  color: var(--color-background);
+  -webkit-text-stroke: 0.3vw var(--color-primary);
+  text-transform: uppercase;
+
+}
+
+.header h1::before{
+  content: attr(data-text);
+  font-family: var(--font-family-primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
   color: var(--color-primary);
+  -webkit-text-stroke: 0vw var(--color-primary);
+  overflow: hidden;
+  animation: animate 8s linear infinite;
 }
 
-@keyframes fill {
-  0% {
-    fill: black;
+@keyframes animate {
+  0%,10%,100%{ 
+    width: 0;
   }
-  100% {
-    fill: black;
+  70%,90%{ 
+    width: 100%;
   }
 }
 
-.animate-fill {
-  animation: fill 4s linear 1s forwards;
-}
 
 .header p {
   font-size: 1.4rem;
@@ -328,20 +343,6 @@ body {
   margin-top: 1.4rem;
 }
 
-.header a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px 10px;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-top: 1.4rem;
-}
-
-.header a:hover {
-  background-color: var(--color-secondary);
-  padding: 5px 10px;
-  border-radius: 5px;
-}
 
 /*////////////////////// about ///////////////////*/
 
@@ -401,9 +402,11 @@ body {
 }
 
 .about-card p {
+  font-family: var(--font-family-secondary);
 }
 
 .about-wrapup {
+  font-family: var(--font-family-secondary);
   margin-top: 6.4rem;
   margin-bottom: 1.4rem;
   opacity: 0;
@@ -423,8 +426,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60%;
-  width: 60%;
+  z-index: 2;
+  height: auto;
+  width: 90%;
 }
 
 .projects-title {
@@ -438,6 +442,8 @@ body {
   border: 2px solid rgb(80, 79, 98);
   border-radius: 10px;
   box-shadow: 0px 0px 12px rgb(80, 79, 98);
+  height: 100%;
+  width: 100%
 }
 
 .embla p {
@@ -454,13 +460,13 @@ body {
 
 .embla__container img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   object-position: center;
   border-radius: 10px;
+  z-index: 1;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .embla__container img {
     width: 80%;
     height: auto;
@@ -472,7 +478,7 @@ body {
     width: 100%;
     height: auto;
   }
-}
+} */
 
 .embla__container h1 {
   font-size: 1.8rem;
@@ -492,14 +498,14 @@ body {
 
 .embla__slide p {
   font-family: var(--font-family-primary);
-  margin-top: 1.4rem;
-  font-size: 1.3rem;
+  margin-top: 1.0rem;
+  font-size: 1.2rem;
 }
 
 .scroll-index {
   position: relative;
   z-index: 100;
-  margin-top: 10px;
+  margin-top: 4vh;
 }
 
 .scroll-index button {
