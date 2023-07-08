@@ -13,7 +13,7 @@ const items = {
       id: 2,
       title: "PhotoLabs",
       description:
-        "PhotoLabs is a full-stack web application that allows users to upload photos, categorize them into topics and store their favorites. It was built using React and Node.js. It was my first introduction to React.",
+        "PhotoLabs is a full-stack web application that allows users to upload photos, categorize them into topics and store their favorites. It was built using React and Node.js. Photolabs was my first introduction to React.",
       image: "/photo-lab.png",
       url1: "https://github.com/DanRoss88/photolabs-project",
     },

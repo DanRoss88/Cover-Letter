@@ -2,12 +2,16 @@ import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-export default function WhyMe() {
+export default function WhyMe() {  
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
-    rootMargin: "450px 0px 0px 0px",
+    threshold: 0.2,
   });
 
   useEffect(() => {
@@ -15,11 +19,6 @@ export default function WhyMe() {
       controls.start("visible");
     }
   }, [controls, inView]);
-
-  const cardVariants = {
-    visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: 50 },
-  };
 
   return (
     <div className="whyme-container">

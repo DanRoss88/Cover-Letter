@@ -6,25 +6,22 @@ export default function References() {
   {/* <span>Here are some references from people I have worked with</span> */}
   <div className="references-grid">
     <div className="references-card">
-      <h2>Chris Warren</h2>
-      <p>Executive Chef</p>
-      <p>Tapestry Senior Living</p>
-      <p>605-359-8411</p>
-      <p>c.warren@gmail.com</p>
+      <h2>Kamila Lemaire</h2>
+      <p>Web Developer</p>
+      <p>Lighthouse Labs</p>
+      <p>kb.lemaire@gmail.com</p>
       </div>
     <div className="references-card">
       <h2>Kayano Oyama</h2>
-      <p>Executive Chef</p>
-      <p>Tapestry Senior Living</p>
-      <p>605-359-8411</p>
-      <p>c.warren@gmail.com</p>
+      <p>Web Developer</p>
+      <p>Lighthouse Labs</p>
+      <p>oyamakayano@gmail.com</p>
       </div>
     <div className="references-card">
-      <h2>Kamila Mefefeg</h2>
-      <p>Executive Chef</p>
-      <p>Tapestry Senior Living</p>
-      <p>605-359-8411</p>
-      <p>c.warren@gmail.com</p>
+      <h2>Liana Kan</h2>
+      <p>Web Developer</p>
+      <p>Lighthouse Labs</p>
+      <p>liana.kan98@gmail.com</p>
       </div>
       </div>
   </div>

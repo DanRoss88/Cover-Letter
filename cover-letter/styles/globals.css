@@ -45,7 +45,7 @@ body {
   justify-content: center;
   margin: 0 auto;
   padding: 0 1.5rem;
-  padding-top: 240px;
+  padding-top: 120px;
 }
 
 @media (max-width: 768px) {
@@ -419,7 +419,7 @@ body {
 
 .about-wrapup {
   font-family: var(--font-family-secondary);
-  margin-top: 6.4rem;
+  margin-top: 4rem;
   margin-bottom: 1.4rem;
   opacity: 0;
   transform: translateY(50px);
@@ -683,7 +683,7 @@ body {
 
 .whyme-card p {
   margin-top: 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-primary);
   color: var(--color-primary);
