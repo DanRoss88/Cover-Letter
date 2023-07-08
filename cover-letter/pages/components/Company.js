@@ -22,7 +22,7 @@ export default function Company() {
 
   return (
     <div className="company-container">
-      <h1>What I love about the Company</h1>
+      <h1>The Company</h1>
       <span>Here are some facts that I really like about the company.</span>
       <div className="company-grid">
         <motion.div
@@ -34,16 +34,9 @@ export default function Company() {
           transition={{ duration: 0.5 }}
         >
           <div className="company-logo1">
-          <h2>Company Fact 1</h2>
+          <h2>Innovation</h2>
           <p>
-            Here is a fact about the company that I really like. Here is a fact
-            about the company that I really like. Here is a fact about the
-            company that I really like. Here is a fact about the company that I
-            really like. Here is a fact about the company that I really like.
-            Here is a fact about the company that I really like. Here is a fact
-            about the company that I really like. Here is a fact about the
-            company that I really like. Here is a fact about the company that I
-            really like.
+          The company prides itself on fostering a culture of innovation, encouraging employees to think creatively and push boundaries to develop groundbreaking solutions.
           </p>
           </div>
         </motion.div>
@@ -55,16 +48,9 @@ export default function Company() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="company-logo2">
-          <h2>Company Fact 2</h2>
+          <h2>Diversity and Inclusion</h2>
           <p>
-            Here is a fact about the company that I really like. Here is a fact
-            about the company that I really like. Here is a fact about the
-            company that I really like. Here is a fact about the company that I
-            really like. Here is a fact about the company that I really like.
-            Here is a fact about the company that I really like. Here is a fact
-            about the company that I really like. Here is a fact about the
-            company that I really like. Here is a fact about the company that I
-            really like.
+          The company is committed to creating a diverse and inclusive workplace where every individual feels valued, respected, and empowered to contribute their unique perspectives.
           </p>
           </div>
         </motion.div>
@@ -76,16 +62,9 @@ export default function Company() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="company-logo3">
-          <h2>Company Fact 3</h2>
+          <h2>Social Responsibility</h2>
           <p>
-            Here is a fact about the company that I really like. Here is a fact
-            about the company that I really like. Here is a fact about the
-            company that I really like. Here is a fact about the company that I
-            really like. Here is a fact about the company that I really like.
-            Here is a fact about the company that I really like. Here is a fact
-            about the company that I really like. Here is a fact about the
-            company that I really like. Here is a fact about the company that I
-            really like.
+          The company actively engages in philanthropy, community outreach, and sustainable practices, making a positive impact on society and demonstrating its commitment to corporate social responsibility.
           </p>
           </div>
         </motion.div>

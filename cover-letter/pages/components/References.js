@@ -3,19 +3,28 @@ export default function References() {
   return (
 <div className="references-container">
   <h1>References</h1>
-  <span>Here are some references from people I have worked with</span>
+  {/* <span>Here are some references from people I have worked with</span> */}
   <div className="references-grid">
     <div className="references-card">
-      <h2>Reference 1</h2>
-      <p>Here is a reference from someone I have worked with</p>
+      <h2>Chris Warren</h2>
+      <p>Executive Chef</p>
+      <p>Tapestry Senior Living</p>
+      <p>605-359-8411</p>
+      <p>c.warren@gmail.com</p>
       </div>
     <div className="references-card">
-      <h2>Reference 2</h2>
-      <p>Here is a reference from someone I have worked with</p>
+      <h2>Kayano Oyama</h2>
+      <p>Executive Chef</p>
+      <p>Tapestry Senior Living</p>
+      <p>605-359-8411</p>
+      <p>c.warren@gmail.com</p>
       </div>
     <div className="references-card">
-      <h2>Reference 3</h2>
-      <p>Here is a reference from someone I have worked with</p>
+      <h2>Kamila Mefefeg</h2>
+      <p>Executive Chef</p>
+      <p>Tapestry Senior Living</p>
+      <p>605-359-8411</p>
+      <p>c.warren@gmail.com</p>
       </div>
       </div>
   </div>
