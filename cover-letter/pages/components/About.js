@@ -12,7 +12,6 @@ export default function About() {
       <div className="about-headline">
         <h1>About Me</h1>
       </div>
-      <div className="about-content">
         <div className={`about-card ${isVisible && "visible"}`}>
           <h3>2006</h3>
           <h2>Started kitchen work</h2>
@@ -53,7 +52,6 @@ export default function About() {
             what truly makes you happy.
           </p>
         </div>
-      </div>
     </main>
   );
 }
