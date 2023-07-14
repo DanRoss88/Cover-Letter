@@ -1,6 +1,6 @@
 import React from "react";
 import companies from "../data/companies";
-const company = companies.find((company) => company.id === 1);
+const company = companies.find((company) => company.id === 2);
 
 export default function Header() {
 

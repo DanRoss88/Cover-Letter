@@ -17,7 +17,7 @@ const companies = [
     },
   {
     id: 2,
-    name: 'Company 2',
+    name: 'Company',
     card1: {
       title: 'Purpose-driven work environment',
       description: 'I am drawn to ___ because of its focus on building breakthroughs together and helping businesses run better. The company\'s commitment to enabling innovation and creating solutions that improve lives aligns with my own values and aspirations as a full-stack web developer.',

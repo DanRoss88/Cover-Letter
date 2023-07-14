@@ -5,7 +5,7 @@ import companies from "../data/companies";
 
 console.log(companies);
 export default function Company() {
-  const company = companies.find((company) => company.id === 1);
+  const company = companies.find((company) => company.id === 2);
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
