@@ -3,7 +3,6 @@ export default function References() {
   return (
 <div className="references-container">
   <h1>References</h1>
-  {/* <span>Here are some references from people I have worked with</span> */}
   <div className="references-grid">
     <div className="references-card">
       <h2>Kamila Lemaire</h2>

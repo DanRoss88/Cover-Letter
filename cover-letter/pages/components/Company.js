@@ -1,8 +1,12 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import companies from "../data/companies";
 
+console.log(companies);
 export default function Company() {
+  const company = companies.find((company) => company.id === 1);
+
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -22,8 +26,8 @@ export default function Company() {
 
   return (
     <div className="company-container">
-      <h1>The Company</h1>
-      <span>Here are some facts that I really like about the company.</span>
+      <h1>{company.name}</h1>
+      <span>Here are some facts that I really like about {company.name}.</span>
       <div className="company-grid">
         <motion.div
           className="company-card"
@@ -34,10 +38,8 @@ export default function Company() {
           transition={{ duration: 0.5 }}
         >
           <div className="company-logo1">
-          <h2>Innovation</h2>
-          <p>
-          The company prides itself on fostering a culture of innovation, encouraging employees to think creatively and push boundaries to develop groundbreaking solutions.
-          </p>
+            <h2>{company.card1.title}</h2>
+            <p>{company.card1.description}</p>
           </div>
         </motion.div>
         <motion.div
@@ -48,10 +50,8 @@ export default function Company() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="company-logo2">
-          <h2>Diversity and Inclusion</h2>
-          <p>
-          The company is committed to creating a diverse and inclusive workplace where every individual feels valued, respected, and empowered to contribute their unique perspectives.
-          </p>
+            <h2>{company.card2.title}</h2>
+            <p>{company.card2.description}</p>
           </div>
         </motion.div>
         <motion.div
@@ -62,10 +62,8 @@ export default function Company() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="company-logo3">
-          <h2>Social Responsibility</h2>
-          <p>
-          The company actively engages in philanthropy, community outreach, and sustainable practices, making a positive impact on society and demonstrating its commitment to corporate social responsibility.
-          </p>
+            <h2>{company.card3.title}</h2>
+            <p>{company.card3.description}</p>
           </div>
         </motion.div>
       </div>
