@@ -19,6 +19,9 @@ export default function Skills() {
             <div className="skill">
               <Image src="/ruby.jpg" width={75} height={75} alt="html" />
             </div>
+            <div className="skill">
+              <Image src="/java.jpg" width={75} height={75} alt="html" />
+            </div>
           </div>
         </div>
         <div className="skills-card">
