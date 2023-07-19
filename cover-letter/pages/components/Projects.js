@@ -49,8 +49,8 @@ export default function Projects() {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    width={500}
-                    height={680}
+                    width={2200}
+                    height={1100}
                     className="responsive-image rounded-lg shadow-xl"
                     placeholder="blur"
                     blurDataURL={item.image}

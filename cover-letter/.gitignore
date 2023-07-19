@@ -37,3 +37,4 @@ next-env.d.ts
 
 # data
 pages/data/companies.js
+pages/data/references.js

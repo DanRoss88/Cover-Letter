@@ -6,7 +6,7 @@ export default function Skills() {
       <div className="skills-grid">
         <div className="skills-card">
           <h3>Languages</h3>
-          <div className="skill-icons">
+          <div className="skill-icons1">
             <div className="skill">
               <Image src="/js.jpg" width={75} height={75} alt="JavaScript" />
             </div>
@@ -26,7 +26,7 @@ export default function Skills() {
         </div>
         <div className="skills-card">
           <h3>Systems & Databases</h3>
-          <div className="skill-icons">
+          <div className="skill-icons2">
             <div className="skill">
               <Image src="/psql.jpg" width={75} height={75} alt="html" />
             </div>
@@ -40,7 +40,7 @@ export default function Skills() {
         </div>
         <div className="skills-card">
           <h3>Frameworks & Libraries</h3>
-          <div className="skill-icons">
+          <div className="skill-icons3">
             <div className="skill">
               <Image src="/next-logo.png" width={75} height={75} alt="html" />
             </div>
@@ -83,7 +83,7 @@ export default function Skills() {
         </div>
         <div className="skills-card">
           <h3>Testing</h3>
-          <div className="skill-icons">
+          <div className="skill-icons4">
             <div className="skill">
               <Image src="/mocha.jpg" width={75} height={75} alt="html" />
             </div>
