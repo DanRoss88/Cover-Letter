@@ -496,7 +496,7 @@ body {
 } */
 
 .embla__container h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-tertiary);
   color: var(--color-primary);
@@ -516,7 +516,7 @@ body {
 .embla__slide p {
   font-family: var(--font-family-primary);
   margin-top: 1.0rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .scroll-index {
