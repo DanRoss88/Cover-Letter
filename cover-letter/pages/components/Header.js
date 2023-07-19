@@ -1,5 +1,5 @@
 import React from "react";
-import companies from "../data/companies";
+import companies from "../../lib/companies";
 const company = companies.find((company) => company.id === 2);
 
 export default function Header() {
