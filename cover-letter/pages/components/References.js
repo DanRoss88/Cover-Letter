@@ -1,4 +1,4 @@
-import references from "../lib/references";
+import references from "../../lib/references";
 import Link from "next/link";
 
 export default function References() {

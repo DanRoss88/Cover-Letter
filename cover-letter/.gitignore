@@ -36,5 +36,5 @@ yarn-error.log*
 next-env.d.ts
 
 # data
-pages/data/companies.js
-pages/data/references.js
+lib/companies.js
+lib/references.js

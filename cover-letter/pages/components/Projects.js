@@ -3,7 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineLink } from "react-icons/ai";
-import items from "../lib/items";
+import items from "../../lib/items";
 
 export default function Projects() {
   const [emblaRef, embla] = useEmblaCarousel({
