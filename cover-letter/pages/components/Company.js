@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import companies from "../data/companies";
-
+import companies from "../lib/companies";
 
 export default function Company() {
   const company = companies.find((company) => company.id === 2);
